@@ -5,7 +5,7 @@
 
 LTR329ALS01::LTR329ALS01() {
 }
-#ifdef ESP32 || ESP8266
+#if defined(ESP32) || defined(ESP8266)
 LTR329ALS01::LTR329ALS01(uint8_t sda, uint8_t scl) 
 : sda(sda), scl(scl) {
 }

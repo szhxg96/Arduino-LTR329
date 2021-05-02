@@ -118,7 +118,7 @@ class LTR329ALS01
 {
 public: 
     LTR329ALS01(void); 
-#ifdef ESP32 || ESP8266
+#if defined(ESP32) || defined(ESP8266)
     LTR329ALS01(uint8_t sda, uint8_t scl); 
 #endif
     virtual ~LTR329ALS01(); 
